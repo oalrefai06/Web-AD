@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="res/style.css">
+  <link rel="stylesheet" href="res/navStyle.css">
+  <meta name="description" content="Web Development 1 - Course">
+  <meta name="keywords" content="HTML,CSS,JS">
+  <meta name="author" content="Professor Nazeeh Ghatasheh">
+  <title>HTML Tables</title>
+</head>
+<body>
+<!--Nav Bar Start-->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">HTML
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="links.html">Links</a>
+            <a href="tables.html">Tables</a>
+            <a href="picture.html">Picture</a>
+            <a href="lists.html">Lists</a>
+            <a href="blockinline.html">Block-Inline</a>
+            <a href="class.html">Class</a>
+        <a href="id.html">ID</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">CSS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="style_01.html">CSS Exampel 1</a>
+            <a href="style_02.html">CSS Exampel 2</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">JS
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="querystringJS.html">Get Query String using JS</a>
+            <a href="js1.html">JS 1</a>
+            <a href="js2.html">JS 2</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Templates
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="template.html">HTML Page Template</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Students Projects
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Projects <span style="color: red;">( Offline Only )</span></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">External Links
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a class="extlink" href="https://www.interviewbit.com/html-cheat-sheet/" target="_blank" title="External">HTML Cheat Sheet <i class="fa fa-external-link"></i></a>
+          </div>
+        </div>
+    </div>
+</nav>
+<!--Nav Bar End-->
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus minima ipsa cumque laboriosam dolorem cupiditate enim officia aperiam explicabo voluptas!</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+    <table>
+        <caption>Testing HTML Table Design</caption>
+        <tr>
+          <th>TH1</th>
+          <th>TH2</th>
+          <th>TH3</th>
+        </tr>
+        <tr>
+          <td style="width:30%; background-color: aqua;">R1C1</td>
+          <td>R1C2</td>
+          <td>R1C3</td>
+        </tr>
+        <tr style="height:200px">
+          <td>R2C1</td>
+          <td>R2C2</td>
+          <td>R2C3</td>
+        </tr>
+      </table>
+
+<p></p>
+
+<table>
+    <caption>Vertical Table Headers</caption>
+    <tr>
+      <th>TH1</th>
+      <td>R1C2</td>
+      <td>R1C3</td>
+    </tr>
+    <tr>
+        <th>TH2</th>
+        <td>R2C2</td>
+        <td>R2C3</td>
+    </tr>
+    <tr>
+        <th>TH3</th>
+        <td>R3C2</td>
+        <td>R3C3</td>
+    </tr>
+  </table>
+
+<p></p>
+
+<table>
+    <caption>Span Table Headers</caption>
+    <tr>
+      <th colspan="2">TH1 (span)</th>
+      <th>TH3</th>
+    </tr>
+    <tr>
+      <td style="width:50%; background-color: aqua;">R1C1</td>
+      <td>R1C2</td>
+      <td>R1C3</td>
+    </tr>
+    <tr style="height:100px">
+      <td>R2C1</td>
+      <td>R2C2</td>
+      <td>R2C3</td>
+    </tr>
+  </table>
+
+<p></p>
+
+<table>
+    <caption>Testing Colgroup</caption>
+    <colgroup>
+        <col span="2" style="background-color: #e0ec75">
+        <col span="1">
+        <col span="3" style="background-color: rgb(3, 19, 112)">
+      </colgroup>
+    <tr>
+      <th>TH1</th>
+      <th>TH2</th>
+      <th>TH3</th>
+      <th>TH4</th>
+      <th>TH5</th>
+      <th>TH6</th>
+    </tr>
+    <tr>
+      <td style="width:70%; background-color: aqua;">R1C1</td>
+      <td>R1C2</td>
+      <td>R1C3</td>
+      <td>R1C4</td>
+      <td>R1C5</td>
+      <td>R1C6</td>
+    </tr>
+    <tr style="height:200px">
+      <td>R2C1</td>
+      <td>R2C2</td>
+      <td>R2C3</td>
+      <td>R2C4</td>
+      <td>R2C5</td>
+      <td>R2C6</td>
+    </tr>
+
+    <tr>
+      <td>R3C1</td>
+      <td>R3C2</td>
+      <td>R3C3</td>
+      <td>R3C4</td>
+      <td>R3C5</td>
+      <td>R3C6</td>
+      </tr>
+
+      <tr>
+        <td>R4C1</td>
+        <td>R4C2</td>
+        <td>R4C3</td>
+        <td>R4C4</td>
+        <td>R4C5</td>
+        <td>R4C6</td>
+        </tr>
+  </table>
+
+  <p></p>
+
+</body>
+</html>
